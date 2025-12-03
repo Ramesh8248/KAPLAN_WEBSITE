@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kaplan Real Estate Education Clone</title>
+    <!-- Bootstrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts: Merriweather (Headings) & Open Sans (Body) -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&family=Open+Sans:wght@400;600;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- Top Bar -->
+    <div class="top-bar">
+        <div class="container d-flex justify-content-between align-items-center">
+            <div class="state-selector">
+                Minnesota <i class="fas fa-chevron-down ms-2" style="font-size: 10px;"></i>
+            </div>
+            <div class="top-menu d-none d-md-block">
+                <a href="#">Why Kaplan?</a>
+                <a href="#">800.636.9517</a>
+                <a href="#">Career Toolbox</a>
+                <a href="#">Student Support</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg sticky-top">
+    <div class="container">
+        <!-- 1. Brand Logo (Left Side) -->
+        <a class="navbar-brand d-flex align-items-center" href="#">
+            <span class="brand-logo-text1">KAPLAN</span>
+            <span class="brand-sub-text1">REAL ESTATE<br>EDUCATION</span>
+        </a>
+
+        <div class="d-flex align-items-center order-lg-3">
+            <div class="nav-icons d-flex align-items-center me-3">
+                <i class="fas fa-search"></i>
+                <i class="fas fa-shopping-cart"></i>
+            </div>
+            
+            <!-- Toggler Button -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMain">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </div>
+
+        <!-- 3. Collapsible Menu (Slides from Right) -->
+        <div class="collapse navbar-collapse order-lg-2" id="navMain">
+            <ul class="navbar-nav mx-auto">
+                <li class="nav-item"><a class="nav-link" href="#">Real Estate</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Home Inspection</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Contracting</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Professional Development</a></li>
+            </ul>
+            <div class="d-flex align-items-center">
+                <a href="#" class="btn-student-login">Student Login</a>
+            </div>
+        </div>
+    </div>
+</nav>
+
+    <!-- Hero Section -->
+
+    <section class="hero-section">
+        <div class="hero-overlay"></div>
+        <div class="hero-container">
+
+            <div class="text-content">
+                <h1 class="hero-heading">We are a National Leader in Real Estate Licensing and Continuing Education</h1>
+            </div>
+
+            <div class="form-widget-wrapper">
+                <div class="hero-form-box">
+                    <h4>Your Future Starts Here</h4>
+                    <form>
+                        <div class="input-group-custom">
+                            <select class="form-select-custom">
+                                <option>Minnesota</option>
+                                <option>California</option>
+                                <option>Texas</option>
+                            </select>
+                        </div>
+                        <div class="input-group-custom">
+                            <select class="form-select-custom">
+                                <option>Field of Interest</option>
+                                <option>Real Estate</option>
+                                <option>Home Inspection</option>
+                            </select>
+                        </div>
+                        <div class="input-group-custom">
+                            <select class="form-select-custom">
+                                <option>Type of Education</option>
+                                <option>Licensing</option>
+                                <option>Continuing Ed</option>
+                            </select>
+                        </div>
+                        <div class="input-group-custom">
+                            <select class="form-select-custom">
+                                <option>I want to:</option>
+                                <option>Get a License</option>
+                            </select>
+                        </div>
+                        <button type="button" class="btn-find-courses">Find Your Courses</button>
+                    </form>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- Intro Section -->
+    <section class="intro-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8">
+                    <p class="intro-lead">
+                        Because many of our instructors are practicing real estate professionals themselves, we
+                        understand the needs of our students. Our courses are designed to guide you through your
+                        career—from your first real estate agent license through your subsequent renewals many years
+                        later.
+                    </p>
+                    <p style="margin-bottom: 40px; color: #555;">No matter what path you take, we’re here for you
+                        throughout your career.</p>
+                    <div class="intro-links">
+                        <a href="#">Career Toolbox <i class="fas fa-arrow-right"></i></a>
+                        <a href="#">Student Support <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-4 d-none d-lg-block position-relative">
+                    <div class="dotted-pattern"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Program Cards -->
+    <section class="program-section">
+        <div class="container">
+            <div class="row">
+                <!-- Card 1 -->
+                <div class="col-md-4 mb-4">
+                    <img src="./images/pic3.png" class="prog-card-img" alt="Real Estate">
+                    <div class="prog-card-body">
+                        <div>
+                            <h3>Real Estate</h3>
+                            <p>Our courses are designed to guide you through your career—from your first real estate
+                                agent license through your subsequent renewals many years later.</p>
+                        </div>
+                        <div>
+                            <div class="card-select-wrap">
+                                <select>
+                                    <option>To begin, choose your State</option>
+                                </select>
+                            </div>
+                            <button class="btn-go">Go</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card 2 -->
+                <div class="col-md-4 mb-4">
+                    <img src="./images/pic2.png" class="prog-card-img" alt="Real Estate">
+                    <div class="prog-card-body">
+                        <div>
+                            <h3>Home Inspection</h3>
+                            <p>Kaplan offers the most comprehensive home inspector licensing and certification
+                                preparation courses, home inspector professional development, and more.</p>
+                        </div>
+                        <div>
+                            <div class="card-select-wrap">
+                                <select>
+                                    <option>To begin, choose your State</option>
+                                </select>
+                            </div>
+                            <button class="btn-go">Go</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card 3 -->
+                <div class="col-md-4 mb-4">
+                    <img src="./images/pic1.png" class="prog-card-img" alt="Contracting">
+                    <div class="prog-card-body">
+                        <div>
+                            <h3>Contractor Education</h3>
+                            <p>From getting your contractor's license, to continuing education becoming EPA lead-safe
+                                certified, Kaplan is here for you.</p>
+                        </div>
+                        <div>
+                            <div class="card-select-wrap">
+                                <select>
+                                    <option>To begin, choose your State</option>
+                                </select>
+                            </div>
+                            <button class="btn-go">Go</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Ways to Study (Red) -->
+    <section class="study-section" id="study-content">
+        <div class="container">
+            <h2 class="study-title">Ways to Study</h2>
+
+            <!-- Row 1 -->
+            <div class="row mobile-slider-wrapper">
+                <div class="col-lg-4 study-col active">
+                    <h4>Live Online</h4>
+                    <p>Attend live classes from the comfort of your home or office. Live online courses make it more
+                        convenient than ever to study for your real estate licensing exam.</p>
+                </div>
+                <div class="col-lg-4 study-col border-start-custom">
+                    <h4>Online</h4>
+                    <p>Features national & state content, including videos, workbook PDFs, and hundreds of
+                        multiple-choice questions with rationales.</p>
+                </div>
+                <div class="col-lg-4 study-col border-start-custom">
+                    <h4>Home Study</h4>
+                    <p>An exam-focused self-study solution, with access to our Interactive Study Group and Career Mentor
+                        Live Online Connect.</p>
+                </div>
+            </div>
+
+            <div class="divider-horizontal"></div>
+
+            <!-- Row 2 -->
+            <div class="row justify-content-center mobile-slider-wrapper">
+                <div class="col-lg-5 study-col text-lg-end pe-lg-5">
+                    <h4>Hybrid</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adiecenas nec vehic ula sapien. Sed posuere elit tortor.
+                    </p>
+                </div>
+                <div class="col-lg-5 study-col border-start-custom ps-lg-5">
+                    <h4>Live Classroom</h4>
+                    <p>Nam tincit non urna vitae consequat. Etiam elementum sed felis cursus laoreet. Ut ut ullamcorper
+                        nisi. *</p>
+                </div>
+            </div>
+
+            <!-- SLIDER CONTROLS (Visible only on Mobile) -->
+            <div class="slider-controls">
+                <button class="nav-btn prev-btn" onclick="changeSlide(-1)">
+                    <i class="fa-solid fa-chevron-left"></i>
+                </button>
+                <button class="nav-btn next-btn" onclick="changeSlide(1)">
+                    <i class="fa-solid fa-chevron-right"></i>
+                </button>
+            </div>
+
+            <p class="text-center mt-4 small">* Not available in all states.</p>
+        </div>
+    </section>
+
+
+    <!-- TESTIMONIALS SECTION -->
+    <section class="testimonials-section">
+        <div class="container-fluid">
+            <div class="d-flex justify-content-center align-items-center">
+
+                <!-- Left Navigation Arrow -->
+                <button class="nav-arrow prev-arrow">
+                    <i class="fa-solid fa-chevron-left"></i>
+                </button>
+
+                <!-- Cards Container -->
+                <!-- Note: 'overflow-hidden' removed here and handled in CSS as overflow-x: auto -->
+                <div class="row flex-nowrap cards-wrapper mx-3">
+
+                    <!-- Card 1 -->
+                    <div class="col-md-3 col-sm-6 mb-3">
+                        <div class="review-card">
+                            <div class="d-flex justify-content-between align-items-center mb-2">
+                                <div class="stars-container1">
+                                    <i class="fa-solid fa-star star-box"></i>
+                                    <i class="fa-solid fa-star star-box"></i>
+                                    <i class="fa-solid fa-star star-box"></i>
+                                    <i class="fa-solid fa-star star-box"></i>
+                                    <i class="fa-solid fa-star star-box"></i>
+                                </div>
+                                <span class="review-date">2 days ago</span>
+                            </div>
+                            <h5 class="review-title">Amazing study materials</h5>
+                            <p class="review-body">My experience with the materials was extremely good. Very helpful!
+                            </p>
+                            <p class="review-author">Jaime Cabanyes Aguirre</p>
+                        </div>
+                    </div>
+
+                    <!-- Card 2 -->
+                    <div class="col-md-3 col-sm-6 mb-3">
+                        <div class="review-card">
+                            <div class="d-flex justify-content-between align-items-center mb-2">
+                                <div class="stars-container1">
+                                    <i class="fa-solid fa-star star-box"></i>
+                                    <i class="fa-solid fa-star star-box"></i>
+                                    <i class="fa-solid fa-star star-box"></i>
+                                    <i class="fa-solid fa-star star-box"></i>
+                                    <i class="fa-solid fa-star star-box gray-star"></i>
+                                </div>
+                                <span class="review-date">March 10</span>
+                            </div>
+                            <h5 class="review-title">I felt that the material provid...</h5>
+                            <p class="review-body">I felt that the material provided did a good job of explaining
+                                concepts...</p>
+                            <p class="review-author">Robert</p>
+                        </div>
+                    </div>
+
+                    <!-- Card 3 -->
+                    <div class="col-md-3 col-sm-6 mb-3">
+                        <div class="review-card">
+                            <div class="d-flex justify-content-between align-items-center mb-2">
+                                <div class="stars-container1">
+                                    <i class="fa-solid fa-star star-box"></i>
+                                    <i class="fa-solid fa-star star-box"></i>
+                                    <i class="fa-solid fa-star star-box"></i>
+                                    <i class="fa-solid fa-star star-box"></i>
+                                    <i class="fa-solid fa-star star-box"></i>
+                                </div>
+                                <span class="review-date">March 8</span>
+                            </div>
+                            <h5 class="review-title">Excellent material to prepare...</h5>
+                            <p class="review-body">Kaplan Schweser Notes and other materials helped me a great deal...
+                            </p>
+                            <p class="review-author">Ramesh</p>
+                        </div>
+                    </div>
+
+                    <!-- Card 4 -->
+                    <div class="col-md-3 col-sm-6 mb-3">
+                        <div class="review-card">
+                            <div class="d-flex justify-content-between align-items-center mb-2">
+                                <div class="stars-container1">
+                                    <i class="fa-solid fa-star star-box"></i>
+                                    <i class="fa-solid fa-star star-box"></i>
+                                    <i class="fa-solid fa-star star-box"></i>
+                                    <i class="fa-solid fa-star star-box"></i>
+                                    <i class="fa-solid fa-star star-box"></i>
+                                </div>
+                                <span class="review-date">March 2</span>
+                            </div>
+                            <h5 class="review-title">Prepared me well for my exam.</h5>
+                            <p class="review-body">Prepared me well for my exam.</p>
+                            <p class="review-author">Marin</p>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Right Navigation Arrow -->
+                <button class="nav-arrow next-arrow">
+                    <i class="fa-solid fa-chevron-right"></i>
+                </button>
+            </div>
+
+            <div class="text-center mt-4">
+                <p class="summary-text">Rated <strong>3.2</strong> / 5 based on 351 reviews.</p>
+            </div>
+        </div>
+    </section>
+    <!-- Career Toolbox -->
+    <section>
+        <div class="toolbox-header">
+            <div class="container">
+                <h2>Career Toolbox</h2>
+                <div class="d-flex flex-wrap">
+                    <a href="#" class="toolbox-nav-link active">Real Estate Resources</a>
+                    <a href="#" class="toolbox-nav-link">Home Inspection Resources</a>
+                    <a href="#" class="toolbox-nav-link">Contractor Resources</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="toolbox-body">
+            <div class="container">
+                <div class="row cards-row" id="toolbox-slider">
+
+                    <!-- Card 1 -->
+                    <div class="col-lg-3 col-md-6 mb-4 tool-slide active">
+                        <div class="tool-card">
+                            <span class="tb-tag">Getting Started</span>
+                            <h5 class="tb-title">How To Become a Real Estate Agent</h5>
+                            <p class="tb-text">It mostly depends on where an individual wants to practice real estate.
+                                Becoming a real estate agent requires a state license.</p>
+                            <a href="#" class="tb-link">Read Article</a>
+                        </div>
+                    </div>
+
+                    <!-- Card 2 -->
+                    <div class="col-lg-3 col-md-6 mb-4 tool-slide">
+                        <div class="tool-card">
+                            <span class="tb-tag">Industry News & Advice</span>
+                            <h5 class="tb-title">How to Market Your Real Estate Business with Social Media</h5>
+                            <p class="tb-text">A solid social media presence could mean a big boost in leads for your
+                                real
+                                estate business.</p>
+                            <a href="#" class="tb-link">Read Article</a>
+                        </div>
+                    </div>
+
+                    <!-- Card 3 -->
+                    <div class="col-lg-3 col-md-6 mb-4 tool-slide">
+                        <div class="tool-card">
+                            <span class="tb-tag">Getting Started</span>
+                            <h5 class="tb-title">Requirements to Get a Real Estate License</h5>
+                            <p class="tb-text">Real estate licenses are state-specific, and earning one in a given state
+                                grants you the licensure you need...</p>
+                            <a href="#" class="tb-link">Read Article</a>
+                        </div>
+                    </div>
+
+                    <!-- Card 4 (Video) -->
+                    <div class="col-lg-3 col-md-6 mb-4 tool-slide">
+                        <div class="tool-card video-card">
+                            <div class="vid-thumb-wrapper">
+                                <img src="./images/testimonial.png" alt="Video"> <!-- Ensure path is correct -->
+                                <div class="play-overlay">
+                                    <i class="fas fa-play-circle play-icon"></i>
+                                </div>
+                            </div>
+                            <div class="video-content">
+                                <h5 class="tb-title mt-2">Is Now a Good Time to Start a Real Estate Career?</h5>
+                                <div style="flex-grow:1;"></div>
+                                <a href="#" class="tb-link">Watch Video</a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- NAVIGATION ARROWS (Mobile Only) -->
+                <div class="toolbox-controls">
+                    <button class="nav-btn prev-btn" onclick="moveToolboxSlide(-1)">
+                        <i class="fa-solid fa-chevron-left"></i>
+                    </button>
+                    <button class="nav-btn next-btn" onclick="moveToolboxSlide(1)">
+                        <i class="fa-solid fa-chevron-right"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Profectional Development -->
+
+    <section class="pro-dev-section">
+        <div class="container1">
+            <!-- Left Column -->
+            <div class="image-wrapper">
+                <div class="dot-pattern"></div>
+                <img src="./images/image1.png" alt="Professional looking out window" class="main-image">
+            </div>
+
+            <!-- Right Column -->
+            <div class="content-wrapper">
+                <h2>Professional<br>Development</h2>
+                <p>In any given market, buyers and sellers have options when it comes to choosing a real estate
+                    professional. What are you doing to set yourself apart?</p>
+                <a href="#" class="cta-button">Learn More</a>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+
+                <div class="col-lg-5 col-md-12 d-flex flex-column justify-content-between footer-left-col"
+                    style="min-height: 220px;">
+                    <div class="d-flex align-items-center mb-3">
+                        <div
+                            style="border: 1px solid #fff; border-radius: 50px 50px 50px 0; padding: 5px 15px; display:inline-block;">
+                            <span class="footer-logo-text">KAPLAN</span>
+                        </div>
+                        <div class="footer-logo-sub">
+                            REAL ESTATE<br>EDUCATION
+                        </div>
+                    </div>
+
+                    <div class="social-container">
+                        <a href="#" class="social-circle"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-circle"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-circle"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" class="social-circle"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+
+                <div class="col-lg-7 col-md-12">
+                    <div class="row">
+                        <div class="col-sm-4 mb-4">
+                            <ul>
+                                <li><a href="#">Real Estate</a></li>
+                                <li><a href="#">Home Inspection</a></li>
+                                <li><a href="#">Contracting</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="col-sm-4 mb-4">
+                            <ul>
+                                <li><a href="#">Why Kaplan?</a></li>
+                                <li><a href="#">Career Toolbox</a></li>
+                                <li><a href="#">Professional Development</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="col-sm-4 mb-4">
+                            <ul>
+                                <li><a href="#">Student Login</a></li>
+                                <li><a href="#">Student Support</a></li>
+                                <li><a href="#">Contact Us</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="explore-products">
+                        <a href="#">Explore Kaplan Products <i class="fas fa-chevron-down"></i></a>
+                    </div>
+                </div>
+
+            </div>
+            <div class="footer-divider"></div>
+            <div class="row align-items-top">
+                <div class="col-lg-4 col-md-12 mb-3">
+                    <div class="copyright">© 2022 Kaplan, Inc. All Rights Reserved</div>
+                </div>
+
+                <div class="col-lg-8 col-md-12">
+                    <div class="legal-links">
+                        <a href="#">ADA Policy</a>
+                        <a href="#">Partnership Program</a>
+                        <a href="#">Terms & Conditions</a>
+                        <div class="w-100 d-none d-lg-block" style="height: 0; margin: 0;"></div>
+
+                        <a href="#">Privacy Policy</a>
+                        <a href="#">Stay Connected</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./script.js"></script>
+    <script>
+        // Simulating the State Selector Logic
+        document.querySelectorAll('.btn-go').forEach(btn => {
+            btn.addEventListener('click', function () {
+                alert('Navigating to selected state course...');
+            });
+        });
+    </script>
+</body>
+
+</html>
