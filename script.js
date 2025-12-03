@@ -33,32 +33,20 @@
 
 
     // Testimonial
-   document.addEventListener("DOMContentLoaded", function() {
-        const wrapper = document.querySelector('.cards-wrapper');
-        const prevBtn = document.querySelector('.prev-arrow');
-        const nextBtn = document.querySelector('.next-arrow');
-
-        // Function to determine how far to scroll (scrolls 1 card width)
-        function getScrollAmount() {
-            // Get the width of the first card + its margin
-            const card = wrapper.querySelector('.col-md-3');
-            return card.offsetWidth + 16;
-        }
+  const scrollContainer = document.getElementById('scrollContainer');
+        const prevBtn = document.getElementById('prevBtn');
+        const nextBtn = document.getElementById('nextBtn');
 
         nextBtn.addEventListener('click', () => {
-            wrapper.scrollBy({
-                left: getScrollAmount(),
-                behavior: 'smooth'
-            });
+            // Scroll by the width of one card item
+            const itemWidth = document.querySelector('.review-item').offsetWidth;
+            scrollContainer.scrollBy({ left: itemWidth, behavior: 'smooth' });
         });
 
         prevBtn.addEventListener('click', () => {
-            wrapper.scrollBy({
-                left: -getScrollAmount(),
-                behavior: 'smooth'
-            });
+            const itemWidth = document.querySelector('.review-item').offsetWidth;
+            scrollContainer.scrollBy({ left: -itemWidth, behavior: 'smooth' });
         });
-    });
 
     // Carrer Toolbox
      // Toolbox Slider Logic
